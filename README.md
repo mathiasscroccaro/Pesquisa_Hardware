@@ -6,10 +6,10 @@ At the root of this directory you will find some projects developed at my master
 
 Design of a single cell I-V measurement circuit.
 
-![Version 0.4][IVmeasurement/project.png]
+![Version 0.4](IVmeasurement/project.png)
 
 ## High Speed Op. Amp. Socket
 
 Design of a socket for Gansil GS8051 op. amp.
 
-![Version 1][HighSpeedOpAmpSocket/project.png]
+![Version 1](HighSpeedOpAmpSocket/project.png)
