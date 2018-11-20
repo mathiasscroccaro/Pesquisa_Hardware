@@ -1,0 +1,37 @@
+.title KiCad schematic
+J10 Out4 -4 +4 SollarCell- +3 -3 ADC2 Conn_01x07
+J8 Out1 -1 +1 +5V +2 -2 -2 Conn_01x07
+U1 Net-_J1-Pad3_ Net-_J15-Pad1_ +3 SollarCell- SollarCell- ADC1 +3V3 Net-_J1-Pad1_ INA128
+R5 Net-_J5-Pad2_ Net-_J1-Pad1_ 609
+R8 Net-_J6-Pad2_ Net-_J1-Pad1_ 60
+J6 Net-_J1-Pad1_ Net-_J6-Pad2_ Net-_J1-Pad3_ Conn_01x03
+J5 Net-_J1-Pad1_ Net-_J5-Pad2_ Net-_J1-Pad3_ Conn_01x03
+R3 Net-_J4-Pad2_ Net-_J1-Pad1_ 7.1k
+J4 Net-_J1-Pad1_ Net-_J4-Pad2_ Net-_J1-Pad3_ Conn_01x03
+R1 Net-_J1-Pad2_ Net-_J1-Pad1_ 1M
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Conn_01x03
+J2 SollarCell- +3 Sollar Cell
+R13 +3 Net-_J15-Pad1_ R
+R4 -1 Out1 51k
+R9 SollarCell- -3 10k
+R7 +2 Out1 100k
+R6 Out4 +2 1M
+C1 SollarCell- +3V3 100nF
+C2 SollarCell- +5V 100nF
+J13 ADC2 Net-_J13-Pad2_ -3 Conn_01x03
+R10 -3 Net-_J13-Pad2_ 23k
+R11 -3 Net-_J11-Pad2_ 320k
+J11 ADC2 Net-_J11-Pad2_ -3 Conn_01x03
+J12 ADC2 Net-_J12-Pad2_ -3 Conn_01x03
+R12 -3 Net-_J12-Pad2_ 100
+R2 SollarCell- -1 100k
+J7 -2 Test VGS
+J3 +1 +4 DAC
+J9 ADC1 ADC2 ADC
+J14 SollarCell- +3V3 +5V Source
+J15 Net-_J15-Pad1_ Test VDS
+R16 Vgs -2 1k
+R15 -4 Out4 51k
+R14 SollarCell- -4 100k
+Q1 Net-_J15-Pad1_ Vgs SollarCell- BS170
+.end

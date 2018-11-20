@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+LIBS:IVmeasurement-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM324 U2
+U 1 1 5BC9551C
+P 6900 3850
+F 0 "U2" H 7241 3896 50  0000 L CNN
+F 1 "LM324" H 7241 3805 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_LongPads" H 6850 3950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6950 4050 50  0001 C CNN
+	1    6900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J16
+U 1 1 5BC9564B
+P 3800 3900
+F 0 "J16" H 3720 4217 50  0000 C CNN
+F 1 "baixo" H 3720 4126 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3800 3900 50  0001 C CNN
+F 3 "~" H 3800 3900 50  0001 C CNN
+	1    3800 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J17
+U 1 1 5BC9567B
+P 4600 3900
+F 0 "J17" H 4680 3942 50  0000 L CNN
+F 1 "cima" H 4680 3851 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4600 3900 50  0001 C CNN
+F 3 "~" H 4600 3900 50  0001 C CNN
+	1    4600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3800 4250 3800
+Wire Wire Line
+	4000 3900 4400 3900
+Wire Wire Line
+	4000 4000 4250 4000
+$Comp
+L Device:R R14
+U 1 1 5BC9583B
+P 6150 3950
+F 0 "R14" V 5943 3950 50  0000 C CNN
+F 1 "100k" V 6034 3950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 6080 3950 50  0001 C CNN
+F 3 "" H 6150 3950 50  0001 C CNN
+	1    6150 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5BC95898
+P 6950 4750
+F 0 "R15" V 6743 4750 50  0000 C CNN
+F 1 "51k" V 6834 4750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 6880 4750 50  0001 C CNN
+F 3 "" H 6950 4750 50  0001 C CNN
+	1    6950 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J18
+U 1 1 5BC95979
+P 7950 3900
+F 0 "J18" H 7870 4117 50  0000 C CNN
+F 1 "baixo" H 7870 4026 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7950 3900 50  0001 C CNN
+F 3 "~" H 7950 3900 50  0001 C CNN
+	1    7950 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J19
+U 1 1 5BC959D7
+P 8750 3900
+F 0 "J19" H 8830 3892 50  0000 L CNN
+F 1 "cima" H 8830 3801 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8750 3900 50  0001 C CNN
+F 3 "~" H 8750 3900 50  0001 C CNN
+	1    8750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4000 8550 4000
+Wire Wire Line
+	6800 4750 6450 4750
+Wire Wire Line
+	6450 4750 6450 3950
+Wire Wire Line
+	6450 3950 6600 3950
+Wire Wire Line
+	6300 3950 6450 3950
+Connection ~ 6450 3950
+Wire Wire Line
+	8450 3900 8550 3900
+Wire Wire Line
+	7100 4750 7500 4750
+Wire Wire Line
+	7500 4750 7500 3850
+Wire Wire Line
+	7500 3850 7200 3850
+Text GLabel 4550 4250 2    50   Input ~ 0
+5v
+Wire Wire Line
+	4550 4250 4250 4250
+Wire Wire Line
+	4250 4250 4250 4000
+Connection ~ 4250 4000
+Wire Wire Line
+	4250 4000 4400 4000
+$Comp
+L power:GND #PWR0112
+U 1 1 5BC95EF6
+P 4550 3450
+F 0 "#PWR0112" H 4550 3200 50  0001 C CNN
+F 1 "GND" H 4555 3277 50  0000 C CNN
+F 2 "" H 4550 3450 50  0001 C CNN
+F 3 "" H 4550 3450 50  0001 C CNN
+	1    4550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3450 4550 3300
+Wire Wire Line
+	4550 3300 4250 3300
+Wire Wire Line
+	4250 3300 4250 3800
+Connection ~ 4250 3800
+Wire Wire Line
+	4250 3800 4400 3800
+Text GLabel 6950 3400 2    50   Input ~ 0
+5v
+Wire Wire Line
+	6950 3400 6800 3400
+Wire Wire Line
+	6800 3400 6800 3550
+$Comp
+L power:GND #PWR0113
+U 1 1 5BC962DD
+P 6800 4250
+F 0 "#PWR0113" H 6800 4000 50  0001 C CNN
+F 1 "GND" H 6805 4077 50  0000 C CNN
+F 2 "" H 6800 4250 50  0001 C CNN
+F 3 "" H 6800 4250 50  0001 C CNN
+	1    6800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4150 6800 4250
+$Comp
+L power:GND #PWR0114
+U 1 1 5BC9654A
+P 5800 4050
+F 0 "#PWR0114" H 5800 3800 50  0001 C CNN
+F 1 "GND" H 5805 3877 50  0000 C CNN
+F 2 "" H 5800 4050 50  0001 C CNN
+F 3 "" H 5800 4050 50  0001 C CNN
+	1    5800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4050 5800 3950
+Wire Wire Line
+	5800 3950 6000 3950
+Wire Wire Line
+	8150 3900 8250 3900
+Wire Wire Line
+	8250 3900 8250 3500
+Wire Wire Line
+	8250 3500 7500 3500
+Wire Wire Line
+	7500 3500 7500 3850
+Connection ~ 7500 3850
+Wire Wire Line
+	8450 3050 6450 3050
+Wire Wire Line
+	6450 3050 6450 3750
+Wire Wire Line
+	6450 3750 6600 3750
+Wire Wire Line
+	8450 3050 8450 3900
+$EndSCHEMATC

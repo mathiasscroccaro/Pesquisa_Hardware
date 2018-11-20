@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name lserf)(type Legacy)(uri ./Graphics.pretty)(options "")(descr ""))
+)
