@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Converter)(type Legacy)(uri ${KIPRJMOD}/Converter_DCDC.lib)(options "")(descr ""))
+  (lib (name ChineseDCDC-rescue)(type Legacy)(uri ${KIPRJMOD}/ChineseDCDC-rescue.lib)(options "")(descr ""))
+)
