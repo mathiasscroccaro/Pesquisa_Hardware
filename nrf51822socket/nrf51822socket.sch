@@ -17,24 +17,24 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_02x09_Odd_Even J2
 U 1 1 5C22DE5C
-P 3750 2650
-F 0 "J2" H 3800 3267 50  0000 C CNN
-F 1 "Esquerdo" H 3800 3176 50  0000 C CNN
-F 2 "Connector_PinSocket_2.00mm:PinSocket_2x09_P2.00mm_Vertical" H 3750 2650 50  0001 C CNN
-F 3 "~" H 3750 2650 50  0001 C CNN
-	1    3750 2650
-	1    0    0    -1  
+P 3850 2650
+F 0 "J2" H 3900 3267 50  0000 C CNN
+F 1 "Esquerdo" H 3900 3176 50  0000 C CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_2x09_P2.00mm_Vertical" H 3850 2650 50  0001 C CNN
+F 3 "~" H 3850 2650 50  0001 C CNN
+	1    3850 2650
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x09_Odd_Even J3
 U 1 1 5C22DEA6
-P 5450 2650
-F 0 "J3" H 5500 3267 50  0000 C CNN
-F 1 "Direito" H 5500 3176 50  0000 C CNN
-F 2 "Connector_PinSocket_2.00mm:PinSocket_2x09_P2.00mm_Vertical" H 5450 2650 50  0001 C CNN
-F 3 "~" H 5450 2650 50  0001 C CNN
-	1    5450 2650
-	1    0    0    -1  
+P 5550 2650
+F 0 "J3" H 5600 3267 50  0000 C CNN
+F 1 "Direito" H 5600 3176 50  0000 C CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_2x09_P2.00mm_Vertical" H 5550 2650 50  0001 C CNN
+F 3 "~" H 5550 2650 50  0001 C CNN
+	1    5550 2650
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0101
@@ -71,7 +71,7 @@ SWCLK
 Text GLabel 5000 2450 0    50   Input ~ 0
 SWDIO
 Wire Wire Line
-	5000 2450 5250 2450
+	5000 2450 5150 2450
 Wire Wire Line
 	5950 2450 5750 2450
 $Comp
@@ -493,4 +493,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 4450 2100 4000
 Connection ~ 2100 4000
+Connection ~ 5150 2450
+Wire Wire Line
+	5150 2450 5250 2450
 $EndSCHEMATC
