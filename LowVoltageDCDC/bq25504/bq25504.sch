@@ -273,7 +273,7 @@ $EndComp
 Wire Wire Line
 	2850 5050 2850 5000
 $Comp
-L Battery_Management:BQ25504 U1
+L bq25504-rescue:BQ25504-Battery_Management U1
 U 1 1 5C10172B
 P 5250 3750
 F 0 "U1" H 5891 3796 50  0000 L CNN

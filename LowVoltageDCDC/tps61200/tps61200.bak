@@ -1,0 +1,231 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS61200DRC U?
+U 1 1 5C5333CD
+P 5750 3250
+F 0 "U?" H 5750 3717 50  0000 C CNN
+F 1 "TPS61200DRC" H 5750 3626 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PVSON-N10_ThermalVias" H 5750 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps61200.pdf" H 5750 3250 50  0001 C CNN
+	1    5750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C533440
+P 5750 4050
+F 0 "#PWR?" H 5750 3800 50  0001 C CNN
+F 1 "GND" H 5755 3877 50  0000 C CNN
+F 2 "" H 5750 4050 50  0001 C CNN
+F 3 "" H 5750 4050 50  0001 C CNN
+	1    5750 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4050 5750 3950
+Wire Wire Line
+	5750 3950 5650 3950
+Wire Wire Line
+	5650 3950 5650 3750
+Wire Wire Line
+	5750 3750 5750 3950
+Connection ~ 5750 3950
+Wire Wire Line
+	5850 3750 5850 3950
+Wire Wire Line
+	5850 3950 5750 3950
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5C533751
+P 3700 3150
+F 0 "J?" H 3620 2825 50  0000 C CNN
+F 1 "Conn_01x03" H 3620 2916 50  0000 C CNN
+F 2 "" H 3700 3150 50  0001 C CNN
+F 3 "~" H 3700 3150 50  0001 C CNN
+	1    3700 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 3150 3900 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5C5337BF
+P 4050 3500
+F 0 "#PWR?" H 4050 3250 50  0001 C CNN
+F 1 "GND" H 4055 3327 50  0000 C CNN
+F 2 "" H 4050 3500 50  0001 C CNN
+F 3 "" H 4050 3500 50  0001 C CNN
+	1    4050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3500 4050 3250
+Wire Wire Line
+	4050 3250 3900 3250
+Text GLabel 4750 3350 0    50   Input ~ 0
+Vaux
+Wire Wire Line
+	4750 3350 5350 3350
+Text GLabel 3800 2050 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	3800 2050 4400 2050
+Wire Wire Line
+	5000 2050 5000 2400
+Wire Wire Line
+	5000 3050 5350 3050
+Wire Wire Line
+	3900 3050 5000 3050
+Connection ~ 5000 3050
+$Comp
+L Device:C_Small C?
+U 1 1 5C533AC2
+P 4400 2350
+F 0 "C?" H 4492 2396 50  0000 L CNN
+F 1 "C_Small" H 4492 2305 50  0000 L CNN
+F 2 "" H 4400 2350 50  0001 C CNN
+F 3 "~" H 4400 2350 50  0001 C CNN
+	1    4400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C533AF8
+P 4400 2600
+F 0 "#PWR?" H 4400 2350 50  0001 C CNN
+F 1 "GND" H 4405 2427 50  0000 C CNN
+F 2 "" H 4400 2600 50  0001 C CNN
+F 3 "" H 4400 2600 50  0001 C CNN
+	1    4400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2250 4400 2050
+Connection ~ 4400 2050
+Wire Wire Line
+	4400 2050 5000 2050
+Wire Wire Line
+	4400 2450 4400 2600
+Text GLabel 4750 3250 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	4750 3250 5350 3250
+$Comp
+L Device:L L?
+U 1 1 5C533F3C
+P 5750 2400
+F 0 "L?" V 5940 2400 50  0000 C CNN
+F 1 "L" V 5849 2400 50  0000 C CNN
+F 2 "" H 5750 2400 50  0001 C CNN
+F 3 "~" H 5750 2400 50  0001 C CNN
+	1    5750 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 2400 5000 2400
+Connection ~ 5000 2400
+Wire Wire Line
+	5000 2400 5000 3050
+Wire Wire Line
+	5900 2400 6500 2400
+Wire Wire Line
+	6500 2400 6500 3050
+Wire Wire Line
+	6500 3050 6150 3050
+$Comp
+L Device:R R?
+U 1 1 5C53439C
+P 7300 3900
+F 0 "R?" H 7370 3946 50  0000 L CNN
+F 1 "R" H 7370 3855 50  0000 L CNN
+F 2 "" V 7230 3900 50  0001 C CNN
+F 3 "~" H 7300 3900 50  0001 C CNN
+	1    7300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C534424
+P 7300 3450
+F 0 "R?" H 7370 3496 50  0000 L CNN
+F 1 "R" H 7370 3405 50  0000 L CNN
+F 2 "" V 7230 3450 50  0001 C CNN
+F 3 "~" H 7300 3450 50  0001 C CNN
+	1    7300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3300 7300 3150
+Wire Wire Line
+	7300 3150 6150 3150
+Wire Wire Line
+	7300 3600 7300 3650
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C534BC8
+P 7300 4200
+F 0 "#PWR?" H 7300 3950 50  0001 C CNN
+F 1 "GNDA" H 7305 4027 50  0000 C CNN
+F 2 "" H 7300 4200 50  0001 C CNN
+F 3 "" H 7300 4200 50  0001 C CNN
+	1    7300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4200 7300 4050
+$Comp
+L Device:C_Small C?
+U 1 1 5C534EDB
+P 6550 3450
+F 0 "C?" H 6642 3496 50  0000 L CNN
+F 1 "C_Small" H 6642 3405 50  0000 L CNN
+F 2 "" H 6550 3450 50  0001 C CNN
+F 3 "~" H 6550 3450 50  0001 C CNN
+	1    6550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3350 6550 3250
+Wire Wire Line
+	6550 3250 6150 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5C535216
+P 6550 3700
+F 0 "#PWR?" H 6550 3450 50  0001 C CNN
+F 1 "GND" H 6555 3527 50  0000 C CNN
+F 2 "" H 6550 3700 50  0001 C CNN
+F 3 "" H 6550 3700 50  0001 C CNN
+	1    6550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3700 6550 3550
+Wire Wire Line
+	7300 3650 6900 3650
+Wire Wire Line
+	6900 3650 6900 4200
+Wire Wire Line
+	6900 4200 6300 4200
+Wire Wire Line
+	6300 4200 6300 3450
+Wire Wire Line
+	6300 3450 6150 3450
+Connection ~ 7300 3650
+Wire Wire Line
+	7300 3650 7300 3750
+$EndSCHEMATC
