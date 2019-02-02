@@ -34,4 +34,6 @@ High cost (US$4,6 at ti.com) Energy Harvesting Power Management IC
 
 ## NRF51822 Socket (Kicad 5.0)
 
-This project is a simple socket for NRF51822 radio uC. The schematics includes programming pins, one led and a trimpot for analog read signals. 
+This project is a simple socket for NRF51822 radio uC. The schematics includes programming pins, one led and a trimpot for analog read signals.
+
+![Version 0.2](nrf51822_socket/project.png) 
