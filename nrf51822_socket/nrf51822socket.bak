@@ -288,12 +288,8 @@ $EndComp
 Wire Wire Line
 	1200 3100 1200 2750
 Wire Wire Line
-	1200 3400 1200 3500
-Wire Wire Line
 	1200 3700 2250 3700
 Connection ~ 2250 3700
-Wire Wire Line
-	2250 3700 2250 3500
 Wire Wire Line
 	1350 3250 1500 3250
 Wire Wire Line
@@ -318,8 +314,6 @@ Wire Wire Line
 	2850 2750 3550 2750
 Wire Wire Line
 	3300 2950 3300 4450
-Wire Wire Line
-	1500 3250 1500 3500
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5C5624B5
@@ -345,8 +339,6 @@ Wire Wire Line
 	1500 4450 3300 4450
 Wire Wire Line
 	3450 4000 2600 4000
-Wire Wire Line
-	2600 4000 2600 3500
 Wire Wire Line
 	2600 3250 2400 3250
 $Comp
@@ -460,19 +452,11 @@ Wire Wire Line
 Wire Wire Line
 	1100 5650 1550 5650
 Wire Wire Line
-	1200 3500 1500 3500
-Connection ~ 1200 3500
+	2250 3400 2250 3700
 Wire Wire Line
-	1200 3500 1200 3700
-Connection ~ 1500 3500
+	2600 3250 2600 4000
 Wire Wire Line
-	1500 3500 1500 4450
+	1200 3400 1200 3700
 Wire Wire Line
-	2250 3500 2600 3500
-Connection ~ 2250 3500
-Wire Wire Line
-	2250 3500 2250 3400
-Connection ~ 2600 3500
-Wire Wire Line
-	2600 3500 2600 3250
+	1500 3250 1500 4450
 $EndSCHEMATC
