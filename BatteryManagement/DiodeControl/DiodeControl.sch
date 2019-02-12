@@ -1,0 +1,239 @@
+EESchema Schematic File Version 4
+LIBS:DiodeControl-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 2900 3950 0    50   Input ~ 0
+Vharvesting
+Text GLabel 2850 2950 0    50   Input ~ 0
+Vbateria
+$Comp
+L Device:C_Small C?
+U 1 1 5C62C02A
+P 4350 3700
+F 0 "C?" H 4442 3746 50  0001 L CNN
+F 1 "0.47 F" H 4442 3655 50  0000 L CNN
+F 2 "" H 4350 3700 50  0001 C CNN
+F 3 "~" H 4350 3700 50  0001 C CNN
+	1    4350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C62C052
+P 4900 3700
+F 0 "C?" H 4992 3746 50  0001 L CNN
+F 1 "20 uF" H 4992 3655 50  0000 L CNN
+F 2 "" H 4900 3700 50  0001 C CNN
+F 3 "~" H 4900 3700 50  0001 C CNN
+	1    4900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAT54C D?
+U 1 1 5C62C288
+P 3900 3450
+F 0 "D?" V 3946 3538 50  0001 L CNN
+F 1 "BAR43C" V 4100 3100 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3975 3575 50  0001 L CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 3820 3450 50  0001 C CNN
+	1    3900 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 3950 3900 3750
+Wire Wire Line
+	4350 3600 4350 3450
+Wire Wire Line
+	4350 3450 4100 3450
+Wire Wire Line
+	4900 3600 4900 3450
+Connection ~ 4350 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5C62C4A5
+P 4350 3950
+F 0 "#PWR?" H 4350 3700 50  0001 C CNN
+F 1 "GND" H 4355 3777 50  0000 C CNN
+F 2 "" H 4350 3950 50  0001 C CNN
+F 3 "" H 4350 3950 50  0001 C CNN
+	1    4350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C62C4BD
+P 4900 3950
+F 0 "#PWR?" H 4900 3700 50  0001 C CNN
+F 1 "GND" H 4905 3777 50  0000 C CNN
+F 2 "" H 4900 3950 50  0001 C CNN
+F 3 "" H 4900 3950 50  0001 C CNN
+	1    4900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3950 4350 3800
+Wire Wire Line
+	4900 3950 4900 3800
+Wire Wire Line
+	2900 3950 3900 3950
+Connection ~ 4900 3450
+Wire Wire Line
+	4350 3450 4900 3450
+Text Notes 2750 3750 0    50   ~ 0
+V = 3.3 V, quando\nDC-DC suprir energia\n
+$Comp
+L Diode:BAT54S D?
+U 1 1 5C62D007
+P 3450 2950
+F 0 "D?" H 3450 3175 50  0001 C CNN
+F 1 "BAR43S" H 3450 3083 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3525 3075 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 3330 2950 50  0001 C CNN
+	1    3450 2950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3750 2950 3900 2950
+Wire Wire Line
+	3900 2950 3900 3150
+Wire Wire Line
+	2850 2950 3150 2950
+Text Notes 3100 3350 0    50   ~ 0
+V = 3,7 V\n\n
+Wire Notes Line
+	3050 2950 3050 3300
+Wire Notes Line
+	3050 3300 3500 3300
+Wire Notes Line
+	3650 3950 3650 3800
+Wire Notes Line
+	3650 3800 2700 3800
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C62DFCA
+P 5850 2900
+F 0 "J?" H 5770 2575 50  0001 C CNN
+F 1 "harvesting" H 5770 2667 50  0000 C CNN
+F 2 "" H 5850 2900 50  0001 C CNN
+F 3 "~" H 5850 2900 50  0001 C CNN
+	1    5850 2900
+	-1   0    0    1   
+$EndComp
+Text GLabel 6250 2800 2    50   Input ~ 0
+Vharvesting
+Wire Wire Line
+	6250 2800 6050 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5C62E0E3
+P 6100 3050
+F 0 "#PWR?" H 6100 2800 50  0001 C CNN
+F 1 "GND" H 6105 2877 50  0000 C CNN
+F 2 "" H 6100 3050 50  0001 C CNN
+F 3 "" H 6100 3050 50  0001 C CNN
+	1    6100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3050 6100 2900
+Wire Wire Line
+	6100 2900 6050 2900
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C62E32E
+P 4550 2900
+F 0 "J?" H 4470 2575 50  0001 C CNN
+F 1 "bateria" H 4470 2667 50  0000 C CNN
+F 2 "" H 4550 2900 50  0001 C CNN
+F 3 "~" H 4550 2900 50  0001 C CNN
+	1    4550 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 2800 4750 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5C62E335
+P 4800 3050
+F 0 "#PWR?" H 4800 2800 50  0001 C CNN
+F 1 "GND" H 4805 2877 50  0000 C CNN
+F 2 "" H 4800 3050 50  0001 C CNN
+F 3 "" H 4800 3050 50  0001 C CNN
+	1    4800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3050 4800 2900
+Wire Wire Line
+	4800 2900 4750 2900
+Text GLabel 4950 2800 2    50   Input ~ 0
+Vbateria
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C62E65F
+P 5900 3800
+F 0 "J?" H 5820 3475 50  0001 C CNN
+F 1 "alimentacao" H 5820 3567 50  0000 C CNN
+F 2 "" H 5900 3800 50  0001 C CNN
+F 3 "~" H 5900 3800 50  0001 C CNN
+	1    5900 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C62E666
+P 6150 3950
+F 0 "#PWR?" H 6150 3700 50  0001 C CNN
+F 1 "GND" H 6155 3777 50  0000 C CNN
+F 2 "" H 6150 3950 50  0001 C CNN
+F 3 "" H 6150 3950 50  0001 C CNN
+	1    6150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3950 6150 3800
+Wire Wire Line
+	6150 3800 6100 3800
+$Comp
+L power:VDD #PWR?
+U 1 1 5C631C06
+P 5250 3400
+F 0 "#PWR?" H 5250 3250 50  0001 C CNN
+F 1 "VDD" H 5267 3573 50  0000 C CNN
+F 2 "" H 5250 3400 50  0001 C CNN
+F 3 "" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3450 5250 3400
+Wire Wire Line
+	4900 3450 5250 3450
+$Comp
+L power:VDD #PWR?
+U 1 1 5C631DED
+P 6300 3600
+F 0 "#PWR?" H 6300 3450 50  0001 C CNN
+F 1 "VDD" H 6317 3773 50  0000 C CNN
+F 2 "" H 6300 3600 50  0001 C CNN
+F 3 "" H 6300 3600 50  0001 C CNN
+	1    6300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3600 6300 3700
+Wire Wire Line
+	6100 3700 6300 3700
+$EndSCHEMATC

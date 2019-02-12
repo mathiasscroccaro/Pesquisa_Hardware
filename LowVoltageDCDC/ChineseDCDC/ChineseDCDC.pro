@@ -1,6 +1,6 @@
-update=Seg 14 Jan 2019 14:08:44 -02
+update=Ter 12 Fev 2019 09:08:51 -02
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=
@@ -61,7 +61,7 @@ SolderPasteRatio=-0
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=plots/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
